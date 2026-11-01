@@ -7,7 +7,7 @@ this is a part of hackclub's half life event.<img width="1920" height="632" alt=
 
 
 # Wiring
-the micro controller used is an esp32 s3  because it has more computing power, the display is a standart 2.8 inch display, the controller is a joy stick plus 4 buttons for A,B,START and SELECT.<img width="1050" height="832" alt="Capture d&#39;écran 2026-11-01 221336" src="https://github.com/user-attachments/assets/93547194-18e7-4340-9ead-6b13d27e8214" />
+the micro controller used is an esp32 s3  because it has more computing power, the display is a standart 2.8 inch display, the controller is a joy stick plus 4 buttons for A,B,START and SELECT.i also used an audio amplifier and hooked it up to an 8ohm speaker. and also a micro sd card reader to read your game roms. <img width="1050" height="832" alt="Capture d&#39;écran 2026-11-01 221336" src="https://github.com/user-attachments/assets/93547194-18e7-4340-9ead-6b13d27e8214" />
 
 
 # pcb
