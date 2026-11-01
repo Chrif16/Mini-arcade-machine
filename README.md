@@ -29,10 +29,22 @@ it has screw holes for mounting everything that has monting holes and the rest h
 i used the anemoia esp32 nes emulator firmware and reconfigured it to work with my wiring and joystick support<img width="1611" height="1012" alt="image" src="https://github.com/user-attachments/assets/2f19ba8e-2593-4811-84fb-fd464e532b63" />
 thank you to the anemoia team for making my life easier and making this project possible.
 # How to build
-
-
+for screws and such it is recommended you find them localy for cheap. First, you should screw in place the components with screw holes, and then flash you esp32 s3, and after that youshould slide the speaker in place and plug in place the esp32 and the pam8043 amplifier. and finally solder wire between everything and close the lid and you've got yourself your very own arcade machine
 # How to flash
-
+Download and install the Arduino IDE.
+In File → Preferences → Additional boards manager URLs , add:
+https://espressif.github.io/arduino-esp32/package_esp32_index.json
+Download the ESP32 board support v3.2.1 through Tools → Board → Boards Manager .
+Important:Make sure to download version 3.2.1, as different board versions may have worse performance.
+Navigate to your Arduino Libraries folder: (Default location): Documents/Arduino/libraries/TFT_eSPI
+Copy your desired User_Setup.h file in the /User_Setups folder from this repository into TFT_eSPI/ and overwrite the file. Optionally, edit the #define pins as desired.
+Download the SdFat and TFT_eSPI libraries from Tools → Manage Libraries .
+Locate your ESP32 Arduino platform directory. This is typically at:
+\Users\{username}\AppData\Local\Arduino15\packages\esp32\hardware\esp32\{version}\
+Copy the platform.txt file from this repository and paste into that folder. This file defines additional compiler flags and optimizations used by Anemoia-ESP32.
+Connect your ESP32 via USB.
+In the Arduino IDE, go to Tools → Board and select your ESP32 s3 board .
+Click Upload or press Ctrl+U to build and flash the emulator.
 # BOM
 
 # zine
