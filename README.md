@@ -47,6 +47,5 @@ In the Arduino IDE, go to Tools → Board and select your ESP32 s3 board .
 Click Upload or press Ctrl+U to build and flash the emulator.
 # BOM
 
-# zine
 
 
